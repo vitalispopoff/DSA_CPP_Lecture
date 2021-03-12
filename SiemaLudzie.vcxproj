@@ -149,7 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h" />
-    <ClInclude Include="WhileLoops.h" />
+    <ClInclude Include="switches.h" />
+    <ClInclude Include="whileLoops.h" />
+    <ClInclude Include="_externalLibs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

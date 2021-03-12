@@ -1,19 +1,10 @@
-#include <iostream>
-
-using namespace std;
-
-
-void whileLoops();
-void forLoops();
-void switches();
-void arrays();
+#include "main.h"
 
 
 
 int main() {
 
 	arrays();
-
 
 	return 0;
 }

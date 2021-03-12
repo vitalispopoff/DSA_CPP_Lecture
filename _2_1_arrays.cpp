@@ -19,37 +19,12 @@ void arrays1() {
 	a[3] = a3;
 	a[4] = a4;
 
-
 	a[4] = 0;
 
 	cout << a4;
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 void arrays() {
 
 	arrays1();
-
 }

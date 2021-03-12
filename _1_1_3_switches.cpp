@@ -1,6 +1,5 @@
-#include <iostream>
-
-using namespace std;
+#include "_externalLibs.h"
+#include "switches.h"
 
 double switches0() {
 
@@ -30,9 +29,6 @@ double switches0() {
 }
 
 void switches1() {
-
-	// code by Creel : https://youtu.be/pLIfWO_rbT8?list=PL0C5825724605DB2A&t=267
-
 
 	int userOption;
 
@@ -80,11 +76,11 @@ void switches3() {
 	switch (i) {
 
 	case 0: return;
-	case 1: cout<<i;
+	case 1: cout << i;
 	case 2: cout << "2";  return;
-	case 3: cout<<i;
+	case 3: cout << i;
 	case 4: return;
-	default:cout<<i;
+	default:cout << i;
 	}
 
 }
@@ -113,8 +109,6 @@ void switches4() {
 }
 
 
-void switchesExc1() {
-}
 
 void switches() {
 
