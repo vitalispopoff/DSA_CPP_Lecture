@@ -1,14 +1,11 @@
 #include "_externalLibs.h"
 
+#include "WhileLoops.h"
 
 #include "forLoops.h"
 
 #include "switches.h"
 
-/**/
-void whileLoops();
+#include "arrays.h"
 
-//void switches();
-
-/**/
-void arrays();
+//#include "calculator.h"

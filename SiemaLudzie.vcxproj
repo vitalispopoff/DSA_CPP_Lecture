@@ -140,14 +140,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="_2_1_arrays.cpp" />
-    <ClCompile Include="_0_calculator.cpp" />
-    <ClCompile Include="_1_1_4_forLoops.cpp" />
+    <ClCompile Include="arrays.cpp" />
+    <ClCompile Include="calculator.cpp" />
+    <ClCompile Include="forLoops.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="_1_1_3_switches.cpp" />
-    <ClCompile Include="_1_1_4_whileLoops.cpp" />
+    <ClCompile Include="switches.cpp" />
+    <ClCompile Include="whileLoops.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="arrays.h" />
+    <ClInclude Include="calculator.h" />
     <ClInclude Include="forLoops.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="switches.h" />

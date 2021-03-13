@@ -1,12 +1,14 @@
+#include "_externalLibs.h"
 #include "WhileLoops.h"
 
-#include <iostream>
+//	Examples	--------------------------------
 
-using namespace std;
+void whileLoopsExample() {
 
+}
 
+//	Excercises	--------------------------------
 
-// 1. count to 100 with while loop.
 void whileLoopsExc1() {
 
 	int i = 0;
@@ -17,7 +19,6 @@ void whileLoopsExc1() {
 	cout << "\n";
 }
 
-// 2. count 45 to 0 in 5's with a do while loop.
 void whileLoopsExc2() {
 
 	int i = 45;
@@ -31,8 +32,6 @@ void whileLoopsExc2() {
 	} while (i >= 0);
 }
 
-
-// 3. count the first 6 powers of 7.
 void whileLoopsExc3() {
 
 	int i = 1, number = 7;
@@ -49,6 +48,7 @@ void whileLoopsExc3() {
 	cout << "\n\n";
 }
 
+//	local main	--------------------------------
 
 void whileLoops() {
 

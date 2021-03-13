@@ -1,7 +1,6 @@
 #include "_externalLibs.h"
 #include "forLoops.h"
 
-
 //	Examples	--------------------------------
 
 void forLoopsExample0() {
@@ -24,7 +23,6 @@ void forLoopsExample1() {
 	for (int i = 0; i < 101; i += 2)
 		cout << i << ", ";
 }
-
 
 //	Excercises	--------------------------------
 

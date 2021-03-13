@@ -110,6 +110,10 @@ void switchesExample4() {
 	}
 }
 
+//	Excercises	--------------------------------
+
+
+
 //	local main	--------------------------------
 
 void switches() {

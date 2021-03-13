@@ -1,6 +1,5 @@
-#include <iostream>
-
-using namespace std;
+#include "_externalLibs.h"
+#include "calculator.h"
 
 // 4. calculator exec.
 
@@ -12,7 +11,7 @@ bool
 char
 	operation;
 
-double calculate() {
+double calculate1() {
 
 	if (operation == '+') return (double)a + (double)b;
 	else if (operation == '=') return (double)a - (double)b;
@@ -23,7 +22,7 @@ double calculate() {
 	return 0;
 }
 
-double calculate1() {
+double calculate() {
 
 	switch (operation) {
 
@@ -48,7 +47,6 @@ void setInput() {
 	cout << "\n\tSet the first operand, and hit Enter.\n\tThe operand may be either an integer, or a floating point.\n";
 
 	cin >> a;
-
 
 	cout << "\n\n\tSet the operation, and hit Enter.\n\tChoose between:\n";
 	cout << "\t(+) addition,\n\t(-)subtraction,\n\t(*)multiplication,\n\t(/) division.\n\n";

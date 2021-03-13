@@ -1,14 +1,16 @@
 #include "main.h"
 
-
-
 int main() {
 
 	//arrays();
 
 	//forLoops();
 
-	switches();
+	//switches();
+
+	//whileLoops();
+
+	//arrays();
 
 	return 0;
 }
