@@ -1,17 +1,6 @@
 #include "_externalLibs.h"
 #include "forLoops.h"
 
-void forLoops() {
-
-	
-
-
-	forLoopsExc1();
-
-	forLoopsExc2();
-
-	forLoopsExc3();
-}
 
 //	Examples	--------------------------------
 
@@ -63,3 +52,15 @@ void forLoopsExc3(){
 }
 
 //	local main	--------------------------------
+
+void forLoops() {
+
+	
+
+
+	forLoopsExc1();
+
+	forLoopsExc2();
+
+	forLoopsExc3();
+}

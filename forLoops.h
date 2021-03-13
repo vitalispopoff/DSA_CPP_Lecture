@@ -1,4 +1,6 @@
 
+void forLoops();
+
 //	Examples	--------------------------------
 
 /*for loop cosists of 3 statements:
@@ -30,5 +32,3 @@ void forLoopsExc2();
 */
 void forLoopsExc3();
 
-
-void forLoops();

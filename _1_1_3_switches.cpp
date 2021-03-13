@@ -1,7 +1,9 @@
 #include "_externalLibs.h"
 #include "switches.h"
 
-double switches0() {
+//	Examples	--------------------------------
+
+double switchesExample0() {
 
 	int
 		condition = 0;
@@ -28,7 +30,7 @@ double switches0() {
 	}
 }
 
-void switches1() {
+void switchesExample1() {
 
 	int userOption;
 
@@ -54,7 +56,7 @@ void switches1() {
 	}
 }
 
-void switches2() {
+void switchesExample2() {
 
 	int j = 0;
 
@@ -67,7 +69,7 @@ void switches2() {
 	}
 }
 
-void switches3() {
+void switchesExample3() {
 
 	int i;
 
@@ -85,7 +87,7 @@ void switches3() {
 
 }
 
-void switches4() {
+void switchesExample4() {
 
 	cout << "\n\tChoose your option (0 - 9).\n";
 	int j;
@@ -108,9 +110,9 @@ void switches4() {
 	}
 }
 
-
+//	local main	--------------------------------
 
 void switches() {
 
-	switches4();
+	switchesExample4();
 }

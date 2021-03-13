@@ -6,7 +6,9 @@ int main() {
 
 	//arrays();
 
-	forLoops();
+	//forLoops();
+
+	switches();
 
 	return 0;
 }
