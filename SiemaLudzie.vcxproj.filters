@@ -13,15 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Pliki źródłowe\_0">
-      <UniqueIdentifier>{37541ab6-3e54-4e5b-ad69-e6445070a9d2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\_1">
-      <UniqueIdentifier>{14555d62-36f6-4eb6-8909-5bc970c182f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\_2">
-      <UniqueIdentifier>{35e93a6d-05e9-4cd4-a1bd-bab2e313ccbb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Pliki nagłówkowe\_0">
       <UniqueIdentifier>{483f31db-cba6-4030-bb7b-d6ea4a8c539c}</UniqueIdentifier>
     </Filter>
@@ -31,25 +22,34 @@
     <Filter Include="Pliki nagłówkowe\_2">
       <UniqueIdentifier>{d8ec4631-627b-4797-8757-e9fc817c1172}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\_1 Basic Syntax">
+      <UniqueIdentifier>{14555d62-36f6-4eb6-8909-5bc970c182f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_0 snippets">
+      <UniqueIdentifier>{37541ab6-3e54-4e5b-ad69-e6445070a9d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_2 structures">
+      <UniqueIdentifier>{35e93a6d-05e9-4cd4-a1bd-bab2e313ccbb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="_0_calculator.cpp">
-      <Filter>Pliki źródłowe\_0</Filter>
+      <Filter>Pliki źródłowe\_0 snippets</Filter>
     </ClCompile>
     <ClCompile Include="_1_1_3_switches.cpp">
-      <Filter>Pliki źródłowe\_1</Filter>
+      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
     </ClCompile>
     <ClCompile Include="_1_1_4_forLoops.cpp">
-      <Filter>Pliki źródłowe\_1</Filter>
+      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
     </ClCompile>
     <ClCompile Include="_1_1_4_whileLoops.cpp">
-      <Filter>Pliki źródłowe\_1</Filter>
+      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
     </ClCompile>
     <ClCompile Include="_2_1_arrays.cpp">
-      <Filter>Pliki źródłowe\_2</Filter>
+      <Filter>Pliki źródłowe\_2 structures</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="_externalLibs.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="forLoops.h">
+      <Filter>Pliki nagłówkowe\_1</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

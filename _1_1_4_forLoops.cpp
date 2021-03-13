@@ -4,8 +4,6 @@ using namespace std;
 
 
 
-
-// 1. cout "Cabbage" 1000 times with a for loop
 void forLoopsExc1(){
 
 	for (int i = 1; i <= 1000; ++i) {
@@ -15,14 +13,12 @@ void forLoopsExc1(){
 	}
 }
 
-// 2. say the alphabet using char and 'A' and 'Z'
 void forLoopsExc2(){
 	
 	for (char c = 'A'; c <= 'Z'; ++c)
 		cout << c << (c < 'Z' ? ", " : ".");
 }
 
-// 3. print out numbers from 50 to 100 that ain't divisible by 3
 void forLoopsExc3(){
 
 	for (int i = 50; i <= 100; ++i) {

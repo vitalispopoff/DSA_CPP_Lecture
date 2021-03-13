@@ -148,6 +148,7 @@
     <ClCompile Include="_1_1_4_whileLoops.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="forLoops.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="switches.h" />
     <ClInclude Include="whileLoops.h" />
