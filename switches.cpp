@@ -110,6 +110,66 @@ void switchesExample4() {
 	}
 }
 
+//	Errors, Exceptions, and fails	------------
+
+void switchesError1() {
+
+	bool flag = false;
+
+	switch (flag) {
+
+	case true: break;
+	case false: break;
+	//case 1: break;	// disabled due to the mentioned error.
+	}
+}
+
+void switchesError2() {
+
+	bool flag = false;
+
+	cin >> flag;
+
+	switch (flag) {
+	case 'a': cout << "it worked";  break;
+	}
+}
+
+void switchesError3() {
+
+	bool flag = false;
+
+	switch (flag){}
+
+}
+
+void switchesError4() {
+
+	char flag[] = "nope";
+
+	/*switch (flag) {
+
+	case "nope": break;
+	}*/	
+	// disabled due to the mentioned errors
+}
+
+void switchesError5()
+{
+
+	/*switch (){
+	case 0: break;
+	case 1: break;
+	default: break;
+	}*/
+	// disabled due to the mentioned errors
+}
+
+void switchesError6() {
+
+	//switch () {}	// disabled due to the mentioned error
+}
+
 //	Excercises	--------------------------------
 
 
@@ -118,5 +178,7 @@ void switchesExample4() {
 
 void switches() {
 
-	switchesExample4();
+	//switchesExample4();
+
+	switchesError3();
 }

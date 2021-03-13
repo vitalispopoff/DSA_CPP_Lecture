@@ -31,6 +31,12 @@
     <Filter Include="Pliki źródłowe\snippets">
       <UniqueIdentifier>{37541ab6-3e54-4e5b-ad69-e6445070a9d2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\_0">
+      <UniqueIdentifier>{9b117db8-12cc-434f-b5fb-12b696b020b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_snippets">
+      <UniqueIdentifier>{2d1946fa-8d3d-41a2-876e-3e60e53b1dd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -50,6 +56,12 @@
     </ClCompile>
     <ClCompile Include="arrays.cpp">
       <Filter>Pliki źródłowe\_2 structures</Filter>
+    </ClCompile>
+    <ClCompile Include="operators.cpp">
+      <Filter>Pliki źródłowe\_0</Filter>
+    </ClCompile>
+    <ClCompile Include="types_integerSigned.cpp">
+      <Filter>Pliki źródłowe\_0</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -72,6 +84,12 @@
       <Filter>Pliki nagłówkowe\_2</Filter>
     </ClInclude>
     <ClInclude Include="calculator.h">
+      <Filter>Pliki nagłówkowe\_snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="operators.h">
+      <Filter>Pliki nagłówkowe\_0</Filter>
+    </ClInclude>
+    <ClInclude Include="types_integerSigned.h">
       <Filter>Pliki nagłówkowe\_0</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,4 +27,47 @@ void switchesExample3();
 */
 void switchesExample4();
 
+//	Errors, Exceptions, and fails	------------
+
+/*switch does not accept doubles in value:
+* in the case both "true" and "1" mean the same.
+* C2196 : case value '1' already used
+*/
+void switchesError1();
+
+/*the switch may be detached from the declared switch statement type, or can it ?
+warning. C4808 : case '97 is not a valid value for switch condition of type 'bool' (reported with switchesError4 only)
+
+*/
+void switchesError2();
+
+/*empty switch body
+* warning C4060 : switch statement contains no 'case' or 'default' labels (reported with switchesError4 only)
+*/
+void switchesError3();
+
+/*the switch statement must be based on the integral type
+(integer, char, bool, enum), so a string (char[]) can not be the switch input.
+E0847 : expression must have integral or enum type
+E2373 : this constant expression has type "const char *" instead of the required "char *" type
+C2450 : a switch expression of type 'char [5]' is not valid
+C2440 : 'type cast': cannot convert from 'const char [5]' to 'int'
+C2046 : illegal case
+C4060 : switch statement conatins no 'case' or 'default' labels
+*/
+void switchesError4();
+
+/* switch expression has to be declared
+E0029 : expected an expression
+C2059 : syntax error
+...
+*/
+void switchesError5();
+
+/* empty body doesn't change it
+E0029 : expeted an expression
+C2059 : syntax error
+*/
+void switchesError6();
+
 //	Excercises	--------------------------------
