@@ -4,7 +4,9 @@
 
 int main() {
 
-	arrays();
+	//arrays();
+
+	forLoops();
 
 	return 0;
 }

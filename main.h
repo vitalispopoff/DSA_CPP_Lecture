@@ -1,10 +1,9 @@
 #include "_externalLibs.h"
 
-/**/
-void whileLoops();
+#include "forLoops.h"
 
 /**/
-void forLoops();
+void whileLoops();
 
 /**/
 void switches();
