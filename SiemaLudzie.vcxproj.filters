@@ -63,6 +63,9 @@
     <ClCompile Include="types_integerSigned.cpp">
       <Filter>Pliki źródłowe\_0</Filter>
     </ClCompile>
+    <ClCompile Include="numberBases.cpp">
+      <Filter>Pliki źródłowe\_0</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

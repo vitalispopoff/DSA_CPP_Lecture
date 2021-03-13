@@ -144,6 +144,7 @@
     <ClCompile Include="calculator.cpp" />
     <ClCompile Include="forLoops.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="numberBases.cpp" />
     <ClCompile Include="operators.cpp" />
     <ClCompile Include="switches.cpp" />
     <ClCompile Include="types_integerSigned.cpp" />
