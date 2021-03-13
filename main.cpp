@@ -2,7 +2,7 @@
 
 int main() {
 
-	//arrays();
+	arrays();
 
 	//forLoops();
 

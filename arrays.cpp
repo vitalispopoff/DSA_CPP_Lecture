@@ -29,6 +29,42 @@ void arraysExample2() {
 
 	int arr[] = { 0, 1, 2, 3, 4, 5 };
 
+	cout << "\n\n";
+
+	for(int i : arr)
+		cout << "\t" << i << endl;
+
+	cout << "\n";
+}
+
+void arraysExample3() {
+
+	int arr[5] = { 1 };
+
+	cout << "\n\n";
+
+	for (int i : arr)
+		cout << "\t" << i << endl;
+
+	cout << "\n";
+}
+
+void arraysExample4() {
+
+	int arr[5];
+
+	cout << "\n\n";
+
+	for (int i : arr)
+		cout << "\t" << i << endl;
+
+	cout << "\n";
+}
+
+void arraysExample5() {
+
+	int arr[] = { 0, 1, 2, 3, 4, 5 };
+
 	for (int i = 0; i < size(arr); ++i)
 		cout << "\t" << arr[i] << endl;
 
@@ -39,7 +75,19 @@ void arraysExample2() {
 	cout << "\n";
 }
 
-void arraysExample3(){
+//	Errors, Exceptions, and fails --------------
+
+void arraysErrors1() {
+
+	//int arr[]; // disabled due to mentioned errors
+}
+
+void arraysErrors2(){
+
+	//int arr[] = {}; // disabled due to mentioned errors
+}
+
+void arraysErors3(){
 
 	int arr[] = { 1, 3, 5, 7, 9, 11 };
 
@@ -57,5 +105,7 @@ void arrays() {
 	
 	//arraysExample2();
 
-	arraysExample3();
+	arraysExample4();
+
+	//arraysExample23();
 }
