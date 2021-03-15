@@ -13,29 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Pliki nagłówkowe\_0">
-      <UniqueIdentifier>{483f31db-cba6-4030-bb7b-d6ea4a8c539c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki nagłówkowe\_1">
-      <UniqueIdentifier>{e2119b38-6ce6-4024-ad33-3d6b09e6ce21}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki nagłówkowe\_2">
-      <UniqueIdentifier>{d8ec4631-627b-4797-8757-e9fc817c1172}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\_1 Basic Syntax">
-      <UniqueIdentifier>{14555d62-36f6-4eb6-8909-5bc970c182f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Pliki źródłowe\_2 structures">
-      <UniqueIdentifier>{35e93a6d-05e9-4cd4-a1bd-bab2e313ccbb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Pliki źródłowe\snippets">
       <UniqueIdentifier>{37541ab6-3e54-4e5b-ad69-e6445070a9d2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pliki źródłowe\_0">
-      <UniqueIdentifier>{9b117db8-12cc-434f-b5fb-12b696b020b0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Pliki nagłówkowe\_snippets">
       <UniqueIdentifier>{2d1946fa-8d3d-41a2-876e-3e60e53b1dd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_2 data">
+      <UniqueIdentifier>{35e93a6d-05e9-4cd4-a1bd-bab2e313ccbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_3 basic syntax">
+      <UniqueIdentifier>{14555d62-36f6-4eb6-8909-5bc970c182f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_0 basic dictionary">
+      <UniqueIdentifier>{9b117db8-12cc-434f-b5fb-12b696b020b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_1 data types">
+      <UniqueIdentifier>{e941e7c9-1143-4111-8c3b-2c57bc538984}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_0 basic dictionary">
+      <UniqueIdentifier>{483f31db-cba6-4030-bb7b-d6ea4a8c539c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_2 data">
+      <UniqueIdentifier>{d8ec4631-627b-4797-8757-e9fc817c1172}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_3 basic syntax">
+      <UniqueIdentifier>{e2119b38-6ce6-4024-ad33-3d6b09e6ce21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_1 data types">
+      <UniqueIdentifier>{480cae39-1cce-4284-ac5c-fea510d50d97}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -46,31 +52,37 @@
       <Filter>Pliki źródłowe\snippets</Filter>
     </ClCompile>
     <ClCompile Include="switches.cpp">
-      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
     <ClCompile Include="forLoops.cpp">
-      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
     <ClCompile Include="whileLoops.cpp">
-      <Filter>Pliki źródłowe\_1 Basic Syntax</Filter>
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
     <ClCompile Include="arrays.cpp">
-      <Filter>Pliki źródłowe\_2 structures</Filter>
+      <Filter>Pliki źródłowe\_2 data</Filter>
     </ClCompile>
     <ClCompile Include="operators.cpp">
-      <Filter>Pliki źródłowe\_0</Filter>
-    </ClCompile>
-    <ClCompile Include="types_integerSigned.cpp">
-      <Filter>Pliki źródłowe\_0</Filter>
+      <Filter>Pliki źródłowe\_0 basic dictionary</Filter>
     </ClCompile>
     <ClCompile Include="numberBases.cpp">
-      <Filter>Pliki źródłowe\_0</Filter>
-    </ClCompile>
-    <ClCompile Include="types_fixedWidthIntegers.cpp">
-      <Filter>Pliki źródłowe\_0</Filter>
+      <Filter>Pliki źródłowe\_0 basic dictionary</Filter>
     </ClCompile>
     <ClCompile Include="arrays2D.cpp">
-      <Filter>Pliki źródłowe\_2 structures</Filter>
+      <Filter>Pliki źródłowe\_2 data</Filter>
+    </ClCompile>
+    <ClCompile Include="strings.cpp">
+      <Filter>Pliki źródłowe\_2 data</Filter>
+    </ClCompile>
+    <ClCompile Include="structs.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
+    <ClCompile Include="types_fixedWidthIntegers.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
+    <ClCompile Include="types_integerSigned.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -78,34 +90,37 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="whileLoops.h">
-      <Filter>Pliki nagłówkowe\_1</Filter>
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
     <ClInclude Include="switches.h">
-      <Filter>Pliki nagłówkowe\_1</Filter>
-    </ClInclude>
-    <ClInclude Include="_externalLibs.h">
-      <Filter>Pliki nagłówkowe</Filter>
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
     <ClInclude Include="forLoops.h">
-      <Filter>Pliki nagłówkowe\_1</Filter>
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
     <ClInclude Include="arrays.h">
-      <Filter>Pliki nagłówkowe\_2</Filter>
+      <Filter>Pliki nagłówkowe\_2 data</Filter>
     </ClInclude>
     <ClInclude Include="calculator.h">
       <Filter>Pliki nagłówkowe\_snippets</Filter>
     </ClInclude>
     <ClInclude Include="operators.h">
-      <Filter>Pliki nagłówkowe\_0</Filter>
-    </ClInclude>
-    <ClInclude Include="types_integerSigned.h">
-      <Filter>Pliki nagłówkowe\_0</Filter>
-    </ClInclude>
-    <ClInclude Include="types_fixedWidthIntegers.h">
-      <Filter>Pliki nagłówkowe\_0</Filter>
+      <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
     </ClInclude>
     <ClInclude Include="arrays2D.h">
-      <Filter>Pliki nagłówkowe\_2</Filter>
+      <Filter>Pliki nagłówkowe\_2 data</Filter>
+    </ClInclude>
+    <ClInclude Include="strings.h">
+      <Filter>Pliki nagłówkowe\_2 data</Filter>
+    </ClInclude>
+    <ClInclude Include="types_fixedWidthIntegers.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="types_integerSigned.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="_externalLibs.h">
+      <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

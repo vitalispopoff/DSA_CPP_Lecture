@@ -1,8 +1,8 @@
-#include "main.h"
+//#include "main.h"
 
 int main() {
 
-	int menu = 6;
+	int menu = 7;
 
 	switch (menu) {
 
@@ -47,6 +47,12 @@ int main() {
 			arrays2D();
 			break;
 		}
+
+			case 7: {
+	#include "strings.h"
+				strings();
+				break;
+			}
 	}
 
 	return 0;

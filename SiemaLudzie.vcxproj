@@ -147,6 +147,8 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="numberBases.cpp" />
     <ClCompile Include="operators.cpp" />
+    <ClCompile Include="strings.cpp" />
+    <ClCompile Include="structs.cpp" />
     <ClCompile Include="switches.cpp" />
     <ClCompile Include="types_fixedWidthIntegers.cpp" />
     <ClCompile Include="types_integerSigned.cpp" />
@@ -159,6 +161,7 @@
     <ClInclude Include="forLoops.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="operators.h" />
+    <ClInclude Include="strings.h" />
     <ClInclude Include="switches.h" />
     <ClInclude Include="types_fixedWidthIntegers.h" />
     <ClInclude Include="types_integerSigned.h" />
