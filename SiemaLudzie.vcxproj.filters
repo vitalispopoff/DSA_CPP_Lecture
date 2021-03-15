@@ -66,6 +66,12 @@
     <ClCompile Include="numberBases.cpp">
       <Filter>Pliki źródłowe\_0</Filter>
     </ClCompile>
+    <ClCompile Include="types_fixedWidthIntegers.cpp">
+      <Filter>Pliki źródłowe\_0</Filter>
+    </ClCompile>
+    <ClCompile Include="arrays2D.cpp">
+      <Filter>Pliki źródłowe\_2 structures</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -94,6 +100,12 @@
     </ClInclude>
     <ClInclude Include="types_integerSigned.h">
       <Filter>Pliki nagłówkowe\_0</Filter>
+    </ClInclude>
+    <ClInclude Include="types_fixedWidthIntegers.h">
+      <Filter>Pliki nagłówkowe\_0</Filter>
+    </ClInclude>
+    <ClInclude Include="arrays2D.h">
+      <Filter>Pliki nagłówkowe\_2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
