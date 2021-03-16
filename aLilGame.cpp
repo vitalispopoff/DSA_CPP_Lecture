@@ -15,7 +15,7 @@ struct point {
 }playerPos;
 // playerPos is an immediate declaration of the struct.
 
-int const mapWidth = 20;
+int const mapWidth = 60;
 int	const mapHeight = 20;
 int restarts = 0;
 int steps = 0;
@@ -36,11 +36,12 @@ void generateMap() {
 			int t = (int)(rand() & 1);
 
 			map[x][y].walkable = t;
-			map[x][y].tileCharacter = '#' + t * 11;	// '#' is 35, '.' is 46.
+			//map[x][y].tileCharacter = '#' + t * 11;	// '#' is 35, '.' is 46.
+			map[x][y].tileCharacter = (char) t ?  32 : 219;
 		}
 
 	map[0][0].walkable = true;
-	map[0][0].tileCharacter = '.';
+	map[0][0].tileCharacter = (char) 32;
 }
 
 void printMap() {
@@ -54,7 +55,9 @@ void printMap() {
 
 		for (int x = 0; x < mapWidth; ++x) {
 
-			char c = map[x][y].tileCharacter + ((playerPos.x == x) * (playerPos.y == y) * map[x][y].walkable * 18);
+			//char c = map[x][y].tileCharacter + ((playerPos.x == x) * (playerPos.y == y) * map[x][y].walkable * 32);
+
+			char c = playerPos.x == x && playerPos.y == y && map[x][y].walkable ? 64 : map[x][y].tileCharacter;
 
 			cout << c;
 		}
@@ -62,52 +65,6 @@ void printMap() {
 
 	cout << endl;
 }
-
-//	plain topology
-/*
-bool move() {
-
-	char direction;
-
-	cin >> direction;
-
-	switch (direction) {
-
-		//n y--;
-	case 'n': {
-		playerPos.y -= (playerPos.y > 0 && map[playerPos.x][playerPos.y - 1].walkable);
-		break;
-	}
-
-			//s y++;
-	case 's': {
-		playerPos.y += (playerPos.y < mapHeight - 1) && (map[playerPos.x][playerPos.y + 1].walkable);
-		break;
-	}
-
-			//e x++;
-	case 'e': {
-		playerPos.x += (playerPos.x < mapWidth - 1) && (map[playerPos.x + 1][playerPos.y].walkable);
-		break;
-	}
-
-			//w x--;
-	case 'w': {
-		playerPos.x -= (playerPos.x > 0) && (map[playerPos.x - 1][playerPos.y].walkable);
-		break;
-	}
-
-	case 'q':;
-
-	default: {
-		cout << "fuck YEA";
-		return false;
-	}
-	}
-
-	return true;
-}
-*/
 
 //	torus topology
 bool move() {
