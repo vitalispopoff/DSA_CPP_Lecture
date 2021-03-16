@@ -15,8 +15,11 @@ struct point {
 }playerPos;
 // playerPos is an immediate declaration of the struct.
 
-int const mapWidth = 10;
-int	const mapHeight = 10;
+int const mapWidth = 20;
+int	const mapHeight = 20;
+int restarts = 0;
+int steps = 0;
+int record = max(record, steps);
 
 bool combo = true;
 
@@ -49,18 +52,20 @@ void printMap() {
 
 		cout << endl;
 
-		for (int x = 0; x < mapWidth; ++x){
+		for (int x = 0; x < mapWidth; ++x) {
 
 			char c = map[x][y].tileCharacter + ((playerPos.x == x) * (playerPos.y == y) * map[x][y].walkable * 18);
 
-			cout <<  c;
+			cout << c;
 		}
 	}
 
 	cout << endl;
 }
 
-void move() {
+//	plain topology
+/*
+bool move() {
 
 	char direction;
 
@@ -68,39 +73,104 @@ void move() {
 
 	switch (direction) {
 
-		/* cases can't operate in strictly arithmetic regime, because, 
-		as player.Pos equal to the border fields would result in searching for fields outside the mapTile.
-		&& prevents it as it firstly checks the playerPos condition.
-		*/
-
-	//n y--;
+		//n y--;
 	case 'n': {
-		playerPos.y -= (playerPos.y > 0 && map[playerPos.x][playerPos.y - 1].walkable); 
+		playerPos.y -= (playerPos.y > 0 && map[playerPos.x][playerPos.y - 1].walkable);
 		break;
 	}
 
-	//s y++;
+			//s y++;
 	case 's': {
-		playerPos.y += (playerPos.y < mapHeight - 1) && (map[playerPos.x][playerPos.y + 1].walkable); 
+		playerPos.y += (playerPos.y < mapHeight - 1) && (map[playerPos.x][playerPos.y + 1].walkable);
 		break;
 	}
 
-	//e x++;
+			//e x++;
 	case 'e': {
-		playerPos.x += (playerPos.x < mapWidth - 1) && (map[playerPos.x + 1][playerPos.y].walkable); 
+		playerPos.x += (playerPos.x < mapWidth - 1) && (map[playerPos.x + 1][playerPos.y].walkable);
 		break;
 	}
 
-	//w x--;
+			//w x--;
 	case 'w': {
-		playerPos.x -= (playerPos.x > 0) && (map[playerPos.x - 1][playerPos.y].walkable); 
+		playerPos.x -= (playerPos.x > 0) && (map[playerPos.x - 1][playerPos.y].walkable);
 		break;
 	}
 
 	case 'q':;
 
-	default: break;
+	default: {
+		cout << "fuck YEA";
+		return false;
 	}
+	}
+
+	return true;
+}
+*/
+
+//	torus topology
+bool move() {
+
+	char direction;
+
+	cin >> direction;
+
+	switch (direction) {
+
+		/* cases can't operate in strictly arithmetic regime, because,
+		as player.Pos equal to the border fields would result in searching for fields outside the mapTile.
+		&& prevents it as it firstly checks the playerPos condition.
+		*/
+
+		//n y--;
+	case 'n': {
+		if (playerPos.y == 0 && map[playerPos.x][mapHeight - 1].walkable)playerPos.y = mapHeight - 1;
+		else
+			playerPos.y -= (playerPos.y > 0 && map[playerPos.x][playerPos.y - 1].walkable);
+		break;
+	}
+			//s y++;
+	case 's': {
+		if (playerPos.y == mapHeight - 1 && map[playerPos.x][0].walkable) playerPos.y = 0;
+		else
+			playerPos.y += (playerPos.y < mapHeight - 1) && (map[playerPos.x][playerPos.y + 1].walkable);
+		break;
+	}
+
+			//e x++;
+	case 'e': {
+		if (playerPos.x == mapWidth - 1 && map[0][playerPos.y].walkable) playerPos.x = 0;
+		else
+		playerPos.x += (playerPos.x < mapWidth - 1) && (map[playerPos.x + 1][playerPos.y].walkable);
+		break;
+	}
+
+			//w x--;
+	case 'w': {
+		if (playerPos.x == 0 && map[mapWidth - 1][playerPos.y].walkable) playerPos.x = mapWidth - 1;
+		else
+		playerPos.x -= (playerPos.x > 0) && (map[playerPos.x - 1][playerPos.y].walkable);
+		break;
+	}
+
+	case 'r': 
+	{
+		playerPos.x = playerPos.y = 0;
+		generateMap(); 
+		break;
+	}
+
+	case 'q':;
+
+
+	default: {
+		cout << "fuck YEA";
+		return false;
+	}
+	}
+
+	return true;
 }
 
 
@@ -111,17 +181,12 @@ void lilGame() {
 
 	generateMap();
 
-	printMap();
+	bool flag = true;
 
-	move();
+	while (flag)
+	{
+		printMap();
 
-	printMap();
-
-	move();
-
-	printMap();
-
-	move();
-
-	printMap();
+		flag = move();
+	}
 }

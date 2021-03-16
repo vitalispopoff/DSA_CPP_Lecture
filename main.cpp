@@ -8,8 +8,8 @@ int main() {
 	
 	lilGame();
 
-	char c;
-	cin >> c;
+	//char c;
+	//cin >> c;
 
 	return 0;
 }
