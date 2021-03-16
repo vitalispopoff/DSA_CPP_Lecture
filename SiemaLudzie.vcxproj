@@ -147,6 +147,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="numberBases.cpp" />
     <ClCompile Include="operators.cpp" />
+    <ClCompile Include="aLilGame.cpp" />
     <ClCompile Include="strings.cpp" />
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="switches.cpp" />
@@ -159,9 +160,12 @@
     <ClInclude Include="arrays2D.h" />
     <ClInclude Include="calculator.h" />
     <ClInclude Include="forLoops.h" />
+    <ClInclude Include="aLilGame.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="operators.h" />
+    <ClInclude Include="otherStuff.h" />
     <ClInclude Include="strings.h" />
+    <ClInclude Include="structs.h" />
     <ClInclude Include="switches.h" />
     <ClInclude Include="types_fixedWidthIntegers.h" />
     <ClInclude Include="types_integerSigned.h" />

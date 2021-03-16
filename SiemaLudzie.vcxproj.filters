@@ -84,6 +84,9 @@
     <ClCompile Include="types_integerSigned.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
+    <ClCompile Include="aLilGame.cpp">
+      <Filter>Pliki źródłowe\snippets</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -121,6 +124,15 @@
     </ClInclude>
     <ClInclude Include="_externalLibs.h">
       <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="otherStuff.h">
+      <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="structs.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="aLilGame.h">
+      <Filter>Pliki nagłówkowe\_snippets</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

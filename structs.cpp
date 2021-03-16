@@ -14,16 +14,24 @@ this one's a global
 */
 mapTile m;
 
-/*just by the way constants ...*/
-int const mapWidth = 10;
-int	const mapHeight = 10;
-	
+void f(int i, bool b) {
 
-/* these obviously may be declared into arrays
-*/
-mapTile map[10][10];
+	struct localTile {
+
+		int index;
+		bool value;
+	};
+
+	localTile l;
+	l.index = i;
+	l.value = b;
+}
 
 void structs() {
+
+	f(1, 0);
+
+	//localTile t; // this one doesn't work - localtile is local.
 
 
 
