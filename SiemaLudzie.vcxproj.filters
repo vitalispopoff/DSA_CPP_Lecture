@@ -87,6 +87,15 @@
     <ClCompile Include="aLilGame.cpp">
       <Filter>Pliki źródłowe\snippets</Filter>
     </ClCompile>
+    <ClCompile Include="overloading.cpp">
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="constructDestruct.cpp">
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
+    </ClCompile>
+    <ClCompile Include="newsAndDeletees.cpp">
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -133,6 +142,15 @@
     </ClInclude>
     <ClInclude Include="aLilGame.h">
       <Filter>Pliki nagłówkowe\_snippets</Filter>
+    </ClInclude>
+    <ClInclude Include="overloading.h">
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="constructDestruct.h">
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="newsAndDeletees.h">
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

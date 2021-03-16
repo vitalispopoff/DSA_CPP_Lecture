@@ -120,9 +120,7 @@ bool move() {
 
 	case 'q':;
 
-
 	default: {
-		cout << "fuck YEA";
 		return false;
 	}
 	}

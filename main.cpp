@@ -1,4 +1,4 @@
-#define LIL_GAME
+//#define LIL_GAME
 #include "main.h"
 
 #ifdef LIL_GAME
@@ -18,7 +18,7 @@ int main() {
 
 int main() {
 
-	int menu = -7;
+	int menu = 10;
 
 	switch (menu) {
 
@@ -68,6 +68,44 @@ int main() {
 #include "strings.h"
 		strings();
 		break;
+	}
+
+	case 8: {
+
+#include "newsAndDeletees.h"
+
+		newsAndDeletees();
+
+		cout << "\n\tinitialised by function\n\t\t" << *i<<endl;	
+
+		*i = 191;
+
+		cout << "\n\treinitialised by global statement\n\t\t" << *i<<endl;
+
+		newsAndDeletees();
+
+		cout << "\n\treinitialised by function again\n\n\t" << *i << endl;
+	
+		newsAndDeletees1();
+
+		cout << "\n\tafter del local attempt\n\n\t" << *i << endl;
+	}
+
+	case 9: {
+#include "overloading.h"
+
+		overloading();
+	}
+
+	case 10: {
+#include "constructDestruct.h"
+		//constructDestruct();
+
+
+
+
+
+
 	}
 
 	default: break;
