@@ -10,4 +10,21 @@ until the new variable proper initialization
 */
 void classesExample1();
 
+void classesExample2();
 
+
+/* Excercise 1:
+Write a Person class w/ defined fields:
++ age (int),
++ height (float),
++ weight (float).
+set their values in the constructor
+*/
+void classesExcercise1();
+
+
+/* Excercise 2:
+Write a House class containig 
+a random number of people in it
+*/
+void classesExcercise2();
