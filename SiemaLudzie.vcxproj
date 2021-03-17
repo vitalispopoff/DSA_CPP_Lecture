@@ -143,6 +143,7 @@
     <ClCompile Include="arrays.cpp" />
     <ClCompile Include="arrays2D.cpp" />
     <ClCompile Include="calculator.cpp" />
+    <ClCompile Include="classes.cpp" />
     <ClCompile Include="constructDestruct.cpp" />
     <ClCompile Include="forLoops.cpp" />
     <ClCompile Include="main.cpp" />
@@ -168,8 +169,9 @@
     <ClInclude Include="aLilGame.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="newsAndDeletees.h" />
+    <ClInclude Include="classes.h" />
     <ClInclude Include="operators.h" />
-    <ClInclude Include="otherStuff.h" />
+    <ClInclude Include="reservedNames.h" />
     <ClInclude Include="overloading.h" />
     <ClInclude Include="strings.h" />
     <ClInclude Include="structs.h" />

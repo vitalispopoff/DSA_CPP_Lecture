@@ -4,13 +4,19 @@ void mainMenu(int menu) {
 
 	switch (menu) {
 
-	// 0 :	basic dictionary
+		// 0 :	basic dictionary
 
-	case 0x00: break;
+	case 0x00: {
+#include "reservedNames.h"
+		break;
+	}
 
-	case 0x01: break;
+	case 0x01: {
+#include "operators.h"
+		break;
+	}
 
-	// 1 :	data types
+			 // 1 :	data types
 
 	case 0x10: {
 #include "types_fixedWidthIntegers.h"
@@ -23,8 +29,8 @@ void mainMenu(int menu) {
 		types_signedIntegrals();
 		break;
 	}
-	
-	// 2 :	data basic structures
+
+			 // 2 :	data basic structures
 
 	case 0x20: {
 #include "arrays.h"
@@ -44,7 +50,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	// 3 :	syntax basic elements
+			 // 3 :	syntax basic elements
 
 	case 0x30: {
 #include "WhileLoops.h"
@@ -77,19 +83,27 @@ void mainMenu(int menu) {
 		overloading();
 	}
 
-	// F :	snippets
+			 // 4 :	objectivity
+
+	case 0x40: {
+#include "classes.h"
+		classes();
+		break;
+	}
+
+			 // F :	snippets
 
 	case 0xF0: {
-	#include "calculator.h"
+#include "calculator.h"
 		break;
 	}
 
 	case 0xF1: {
-	#include "aLilGame.h"
+#include "aLilGame.h"
 		break;
 	}
 
-	//	default
+			 //	default
 
 	default: break;
 

@@ -43,6 +43,12 @@
     <Filter Include="Pliki źródłowe\_1 data types">
       <UniqueIdentifier>{480cae39-1cce-4284-ac5c-fea510d50d97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\_4 objectivity">
+      <UniqueIdentifier>{2cfd5986-fc57-4819-9906-9c5433c4fb26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe\_4 objectivity">
+      <UniqueIdentifier>{b6cbedb8-c914-412f-a01b-51ce1ff15a02}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -99,6 +105,9 @@
     <ClCompile Include="mainMenu.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
+    <ClCompile Include="classes.cpp">
+      <Filter>Pliki źródłowe\_4 objectivity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -137,7 +146,7 @@
     <ClInclude Include="_externalLibs.h">
       <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
     </ClInclude>
-    <ClInclude Include="otherStuff.h">
+    <ClInclude Include="reservedNames.h">
       <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
     </ClInclude>
     <ClInclude Include="structs.h">
@@ -154,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="newsAndDeletees.h">
       <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="classes.h">
+      <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
