@@ -111,6 +111,9 @@
     <ClCompile Include="inheritance.cpp">
       <Filter>Pliki źródłowe\_4 objectivity</Filter>
     </ClCompile>
+    <ClCompile Include="indirection.cpp">
+      <Filter>Pliki źródłowe\_0 basic dictionary</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -172,6 +175,9 @@
     </ClInclude>
     <ClInclude Include="inheritance.h">
       <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
+    </ClInclude>
+    <ClInclude Include="indirection.h">
+      <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -154,6 +154,7 @@
     <ClCompile Include="aLilGame.cpp" />
     <ClCompile Include="overloading.cpp" />
     <ClCompile Include="inheritance.cpp" />
+    <ClCompile Include="indirection.cpp" />
     <ClCompile Include="strings.cpp" />
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="switches.cpp" />
@@ -173,6 +174,7 @@
     <ClInclude Include="newsAndDeletees.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="operators.h" />
+    <ClInclude Include="indirection.h" />
     <ClInclude Include="reservedNames.h" />
     <ClInclude Include="overloading.h" />
     <ClInclude Include="strings.h" />

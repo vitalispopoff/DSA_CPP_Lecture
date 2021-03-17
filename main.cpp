@@ -2,7 +2,7 @@
 #include <ctime>
 
 
-int menu = 0x41;
+int menu = 0x33;
 
 int main() {
 	srand(time(NULL));
