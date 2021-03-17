@@ -1,5 +1,4 @@
 
-
 void classes();
 
 /*declared and initialized in stack;
@@ -36,16 +35,16 @@ Write a Person class w/ defined fields:
 + weight (float).
 set their values in the constructor
 */
-//void classesExcercise1();
+void classesExcercise1();
 
 /* Excercise 2:
 Write a House class containig 
 a random number of people in it
 */
-//void classesExcercise2();
+void classesExcercise2();
 
 /* Excercise 3:
 Write a Town class containing
 1000 houses; use previously written classes
 */
-//void classesExcercise3();
+void classesExcercise3();

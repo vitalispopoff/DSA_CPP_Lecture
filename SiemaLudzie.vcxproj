@@ -153,6 +153,7 @@
     <ClCompile Include="operators.cpp" />
     <ClCompile Include="aLilGame.cpp" />
     <ClCompile Include="overloading.cpp" />
+    <ClCompile Include="inheritance.cpp" />
     <ClCompile Include="strings.cpp" />
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="switches.cpp" />
@@ -167,6 +168,7 @@
     <ClInclude Include="constructDestruct.h" />
     <ClInclude Include="forLoops.h" />
     <ClInclude Include="aLilGame.h" />
+    <ClInclude Include="inheritance.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="newsAndDeletees.h" />
     <ClInclude Include="classes.h" />

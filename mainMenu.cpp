@@ -91,6 +91,12 @@ void mainMenu(int menu) {
 		break;
 	}
 
+	case 0x41: {
+#include "inheritance.h"
+		inheritance();
+		break;
+	}
+
 			 // F :	snippets
 
 	case 0xF0: {

@@ -108,6 +108,9 @@
     <ClCompile Include="classes.cpp">
       <Filter>Pliki źródłowe\_4 objectivity</Filter>
     </ClCompile>
+    <ClCompile Include="inheritance.cpp">
+      <Filter>Pliki źródłowe\_4 objectivity</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -165,6 +168,9 @@
       <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
     <ClInclude Include="classes.h">
+      <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
+    </ClInclude>
+    <ClInclude Include="inheritance.h">
       <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
     </ClInclude>
   </ItemGroup>
