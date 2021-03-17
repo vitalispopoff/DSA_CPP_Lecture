@@ -9,3 +9,5 @@
 //#include "arrays.h"
 
 //#include "calculator.h"
+
+void mainMenu(int);

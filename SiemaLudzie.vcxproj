@@ -146,6 +146,7 @@
     <ClCompile Include="constructDestruct.cpp" />
     <ClCompile Include="forLoops.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="newsAndDeletees.cpp" />
     <ClCompile Include="numberBases.cpp" />
     <ClCompile Include="operators.cpp" />

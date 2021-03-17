@@ -1,5 +1,4 @@
 
-
 /* 'new' operator needs an assigned pointer, as it is
 * held on the heap, and managed manually.
 * hence the '*'
@@ -11,10 +10,11 @@ int* i = new int;
 */
 float* f = new float[2];
 
+//a locally scoped function
+void newsAndDeletees1();
+
+// another locally scoped function
+void newsAndDeletees2();
 
 
 void newsAndDeletees();
-
-void newsAndDeletees1();
-
-void newsAndDeletees2(int);

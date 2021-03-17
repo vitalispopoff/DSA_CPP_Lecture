@@ -96,6 +96,9 @@
     <ClCompile Include="newsAndDeletees.cpp">
       <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
+    <ClCompile Include="mainMenu.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">

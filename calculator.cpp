@@ -1,15 +1,9 @@
 #include "_externalLibs.h"
 #include "calculator.h"
 
-// 4. calculator exec.
-
-int 
-	a,
-	b;
-bool
-	repeat = true;
-char
-	operation;
+int a,b;
+bool repeat = true;
+char operation;
 
 double calculate1() {
 

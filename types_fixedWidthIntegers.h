@@ -10,7 +10,6 @@ void fixedInt_32();
 
 void fixedInt_64();
 
-
 /*length of the fast int types depends on the compilers view 
 of what actual int length makes it the fastest to work with.
 rite?

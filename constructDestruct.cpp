@@ -1,12 +1,11 @@
 
-}
 #include "_externalLibs.h"
 #include "constructDestruct.h"
 
-void constructDestruct() {
-
-	constructDestructExcercise1();
-}
+//void constructDestruct() {
+//
+//	constructDestructExcercise1();
+//}
 
 class Bird {
 
