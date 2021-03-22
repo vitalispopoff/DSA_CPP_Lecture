@@ -163,6 +163,7 @@
     <ClCompile Include="switches.cpp" />
     <ClCompile Include="types_fixedWidthIntegers.cpp" />
     <ClCompile Include="types_integerSigned.cpp" />
+    <ClCompile Include="unions.cpp" />
     <ClCompile Include="whileLoops.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +188,7 @@
     <ClInclude Include="switches.h" />
     <ClInclude Include="types_fixedWidthIntegers.h" />
     <ClInclude Include="types_integerSigned.h" />
+    <ClInclude Include="unions.h" />
     <ClInclude Include="whileLoops.h" />
     <ClInclude Include="_externalLibs.h" />
   </ItemGroup>

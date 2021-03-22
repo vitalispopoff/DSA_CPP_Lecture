@@ -128,11 +128,11 @@ bool move() {
 	return true;
 }
 
+	char action;
 
 void lilGame() {
 
 	playerPos.x = playerPos.y = 0;
-	char action;
 
 	generateMap();
 

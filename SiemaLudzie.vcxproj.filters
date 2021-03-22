@@ -111,9 +111,6 @@
     <ClCompile Include="mainMenu.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="classes.cpp">
-      <Filter>Pliki źródłowe\_4 objectivity</Filter>
-    </ClCompile>
     <ClCompile Include="inheritance.cpp">
       <Filter>Pliki źródłowe\_4 objectivity</Filter>
     </ClCompile>
@@ -125,6 +122,12 @@
     </ClCompile>
     <ClCompile Include="functionPointers.cpp">
       <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="classes.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
+    <ClCompile Include="unions.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -182,9 +185,6 @@
     <ClInclude Include="newsAndDeletees.h">
       <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
-    <ClInclude Include="classes.h">
-      <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
-    </ClInclude>
     <ClInclude Include="inheritance.h">
       <Filter>Pliki nagłówkowe\_4 objectivity</Filter>
     </ClInclude>
@@ -196,6 +196,12 @@
     </ClInclude>
     <ClInclude Include="functionPointers.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="classes.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="unions.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
