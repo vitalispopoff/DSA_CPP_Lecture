@@ -5,7 +5,6 @@ appointed variable.
 */
 void indirection();
 
-
 /*basic syntax
 */
 void indirectionExample1();

@@ -49,6 +49,12 @@
     <Filter Include="Pliki nagłówkowe\_4 objectivity">
       <UniqueIdentifier>{b6cbedb8-c914-412f-a01b-51ce1ff15a02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\_5 preprocessor directives">
+      <UniqueIdentifier>{bc2257f8-cf20-443e-b980-e6db0cb6f9ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\_5 preprocessor directives">
+      <UniqueIdentifier>{42f72e0e-7bfb-4213-86c3-edfdf50cf5d3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -114,6 +120,12 @@
     <ClCompile Include="indirection.cpp">
       <Filter>Pliki źródłowe\_0 basic dictionary</Filter>
     </ClCompile>
+    <ClCompile Include="define.cpp">
+      <Filter>Pliki źródłowe\_5 preprocessor directives</Filter>
+    </ClCompile>
+    <ClCompile Include="functionPointers.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -178,6 +190,12 @@
     </ClInclude>
     <ClInclude Include="indirection.h">
       <Filter>Pliki nagłówkowe\_0 basic dictionary</Filter>
+    </ClInclude>
+    <ClInclude Include="define.h">
+      <Filter>Pliki nagłówkowe\_5 preprocessor directives</Filter>
+    </ClInclude>
+    <ClInclude Include="functionPointers.h">
+      <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

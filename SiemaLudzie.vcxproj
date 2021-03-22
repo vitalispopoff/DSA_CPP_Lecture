@@ -117,6 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <PreprocessToFile>false</PreprocessToFile>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -146,6 +147,7 @@
     <ClCompile Include="classes.cpp" />
     <ClCompile Include="constructDestruct.cpp" />
     <ClCompile Include="forLoops.cpp" />
+    <ClCompile Include="functionPointers.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
     <ClCompile Include="newsAndDeletees.cpp" />
@@ -155,6 +157,7 @@
     <ClCompile Include="overloading.cpp" />
     <ClCompile Include="inheritance.cpp" />
     <ClCompile Include="indirection.cpp" />
+    <ClCompile Include="define.cpp" />
     <ClCompile Include="strings.cpp" />
     <ClCompile Include="structs.cpp" />
     <ClCompile Include="switches.cpp" />
@@ -169,12 +172,14 @@
     <ClInclude Include="constructDestruct.h" />
     <ClInclude Include="forLoops.h" />
     <ClInclude Include="aLilGame.h" />
+    <ClInclude Include="functionPointers.h" />
     <ClInclude Include="inheritance.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="newsAndDeletees.h" />
     <ClInclude Include="classes.h" />
     <ClInclude Include="operators.h" />
     <ClInclude Include="indirection.h" />
+    <ClInclude Include="define.h" />
     <ClInclude Include="reservedNames.h" />
     <ClInclude Include="overloading.h" />
     <ClInclude Include="strings.h" />

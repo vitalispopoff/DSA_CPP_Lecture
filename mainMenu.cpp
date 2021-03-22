@@ -18,6 +18,7 @@ void mainMenu(int menu) {
 
 	case 0x011: {
 #include "indirection.h"
+		indirection();
 		break;
 	}
 
@@ -35,7 +36,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			 // 2 :	data basic structures
+	// 2 :	data basic structures
 
 	case 0x200: {
 #include "strings.h"
@@ -55,7 +56,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			 // 3 :	syntax basic elements
+	// 3 :	syntax basic elements
 
 	case 0x300: {
 #include "WhileLoops.h"
@@ -75,12 +76,6 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	case 0x330: {
-#include "pointers.h"
-		pointers();
-		break;
-	}
-
 	case 0x380: {
 
 #include "newsAndDeletees.h"
@@ -94,7 +89,7 @@ void mainMenu(int menu) {
 		overloading();
 	}
 
-			 // 4 :	objectivity
+	// 4 :	objectivity
 
 	case 0x400: {
 #include "classes.h"
@@ -108,7 +103,15 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			 // F :	snippets
+	// 5 :	preprocessor directives
+
+	case 0x500: {
+#include "define.h"
+		define();
+		break;
+	}
+
+	// F :	snippets
 
 	case 0xF00: {
 #include "calculator.h"
@@ -120,7 +123,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			 //	default
+	//	default
 
 	default: break;
 
