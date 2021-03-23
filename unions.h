@@ -1,6 +1,6 @@
 
 /*
- special class type that holds only one non-static member.
+ data structure type that holds only one non-static member.
 the memory allocated for the union is equal 
 to the size of its biggest member.
 
@@ -13,3 +13,24 @@ void unions();
 union - structure size difference compare
 */
 void unionsExample1();
+
+/*
+
+*/
+void unionsExample2();
+
+/*
+union members are public by default, 
+apparently they may be declared private,
+but can't be declared protected, 
+as union is said to not be inherited
+*/
+void unionsExample3();
+
+/*getter/setter functions
+seem to be not working in unions
+*/
+void unionsExample4();
+
+
+void unionsExample5();
