@@ -215,6 +215,53 @@ void unionsExample6() {
 
 }
 
+void unionsExample7() {
+
+	cout << "\n\tExample 7 --------------------------------\n";
+
+	enum DataType { INTEGER, FLOAT, DOUBLE };
+
+	class TaggedUnion {
+	private:
+		DataType  unionType;
+	public:
+		
+		union {
+			int i;	float f; double d;// public by default, remember?			
+		};
+
+		void setValue(int input) {
+			unionType = INTEGER;
+			i = input;
+		}
+		void setValue(float input) {
+			unionType = FLOAT;
+			f = input;
+		}
+		void setValue(double input) {
+			unionType = DOUBLE;
+			d = input;
+		}
+
+		DataType getType() {
+			return unionType;
+		}
+	};
+
+	TaggedUnion m;
+	//m.DATA_TYPE = TaggedUnion::INTEGER;
+	//m.i = 190;
+
+	m.setValue(190);
+	cout << "\n\t" << m.getType() << "\t" << (m.getType() == INTEGER ? m.i : m.f) << endl;
+	m.setValue(190.0f);
+	cout << "\n\t" << m.getType() << "\t" << (m.getType() == INTEGER ? m.i : m.f) << endl;
+}
+
+
+
+
+
 
 void unions() {
 
@@ -229,4 +276,12 @@ void unions() {
 	unionsExample5();
 
 	unionsExample6();
+
+	unionsExample7();
 }
+
+
+
+
+
+

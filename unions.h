@@ -32,5 +32,23 @@ seem to be not working in unions
 */
 void unionsExample4();
 
-
+/**/
 void unionsExample5();
+
+/**/
+void unionsExample6();
+
+/*discriminated unions
+aka tagged unions
+aka disjoint unions
+aka variants
+aka sum types
+etc
+
+essentialy it's a union wrapped in a class or enum 
+which records the type with which 
+the union was called last time
+
+example provided by Creel
+*/
+void unionsExample7();
