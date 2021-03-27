@@ -22,7 +22,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			 // 1 :	data types
+			  // 1 :	data types
 
 	case 0x100: {
 #include "types_fixedWidthIntegers.h"
@@ -36,7 +36,26 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	// 2 :	data basic structures
+	case 0x1E0: {
+#include "structs.h"
+		structs();
+	}
+
+	case 0x1E1: {
+#include "unions.h"
+		unions();
+
+	}
+
+
+	case 0x1F0: {
+#include "functionPointers.h"
+		functionPointers();
+		break;
+
+	}
+
+			  // 2 :	data basic structures
 
 	case 0x200: {
 #include "strings.h"
@@ -56,7 +75,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	// 3 :	syntax basic elements
+			  // 3 :	syntax basic elements
 
 	case 0x300: {
 #include "WhileLoops.h"
@@ -89,7 +108,7 @@ void mainMenu(int menu) {
 		overloading();
 	}
 
-	// 4 :	objectivity
+			  // 4 :	objectivity
 
 	case 0x400: {
 #include "classes.h"
@@ -103,7 +122,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	// 5 :	preprocessor directives
+			  // 5 :	preprocessor directives
 
 	case 0x500: {
 #include "define.h"
@@ -111,7 +130,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	// F :	snippets
+			  // F :	snippets
 
 	case 0xF00: {
 #include "calculator.h"
@@ -123,7 +142,7 @@ void mainMenu(int menu) {
 		break;
 	}
 
-	//	default
+			  //	default
 
 	default: break;
 

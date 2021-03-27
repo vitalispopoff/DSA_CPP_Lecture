@@ -120,13 +120,16 @@
     <ClCompile Include="define.cpp">
       <Filter>Pliki źródłowe\_5 preprocessor directives</Filter>
     </ClCompile>
-    <ClCompile Include="functionPointers.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="classes.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
     <ClCompile Include="unions.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
+    <ClCompile Include="functionTemplates.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="functionPointers.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
   </ItemGroup>
@@ -194,13 +197,16 @@
     <ClInclude Include="define.h">
       <Filter>Pliki nagłówkowe\_5 preprocessor directives</Filter>
     </ClInclude>
-    <ClInclude Include="functionPointers.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="classes.h">
       <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
     <ClInclude Include="unions.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="functionTemplates.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="functionPointers.h">
       <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
   </ItemGroup>

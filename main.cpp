@@ -8,11 +8,11 @@ int main() {
 
 	//mainMenu(menu);
 
-//#include "functionPointers.h"
-	//functionPointers();
+#include "functionTemplates.h"
 
-#include "unions.h"
-	unions();
+	functionTemplates();
+
+
 
 	return 0;
 }
