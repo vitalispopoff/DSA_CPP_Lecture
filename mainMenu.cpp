@@ -6,41 +6,42 @@ void mainMenu(int menu) {
 
 		// 0 :	basic dictionary
 
+			  // reserved names
 	case 0x000: {
 #include "reservedNames.h"
 		break;
 	}
-
+			  // operators
 	case 0x010: {
 #include "operators.h"
 		break;
 	}
-
-	case 0x011: {
+			  // indirection
+	case 0x0F0: {
 #include "indirection.h"
 		indirection();
 		break;
 	}
 
 			  // 1 :	data types
-
-	case 0x100: {
+			  // fixed width integers
+	case 0x110: {
 #include "types_fixedWidthIntegers.h"
 		fixedInt();
 		break;
 	}
-
-	case 0x110: {
+			  // signed integers
+	case 0x111: {
 #include "types_integerSigned.h"
 		types_signedIntegrals();
 		break;
 	}
-
+			  // structs
 	case 0x1E0: {
 #include "structs.h"
 		structs();
 	}
-
+			  // unions
 	case 0x1E1: {
 #include "unions.h"
 		unions();
@@ -57,41 +58,59 @@ void mainMenu(int menu) {
 
 			  // 2 :	data basic structures
 
+			  // strings
 	case 0x200: {
 #include "strings.h"
 		strings();
 		break;
 	}
-
+			  // arrays
 	case 0x210: {
 #include "arrays.h"
 		arrays();
 		break;
 	}
-
-	case 0x220: {
+			  // 2d arrays
+	case 0x211: {
 #include "arrays2D.h"
 		arrays2D();
+		break;
+	}
+			  // vectors
+	case 0x220: {
 		break;
 	}
 
 			  // 3 :	syntax basic elements
 
+			  // while loops
 	case 0x300: {
 #include "WhileLoops.h"
 		whileLoops();
 		break;
 	}
-
+			  // for loops
 	case 0x310: {
 #include "forLoops.h"
 		forLoops();
 		break;
 	}
-
+			  // ranged for loops
+	case 0x311: {
+#include "rangeBasedForLoops.h"
+		rangeBasedForLoops();
+		break;
+	}
+			  // switches
 	case 0x320: {
 #include "switches.h"
 		switches();
+		break;
+	}
+			  // lambda functions
+	case 0x330: {
+#include "lambdaFunctions.h"
+		lambdaFunctions();
 		break;
 	}
 
