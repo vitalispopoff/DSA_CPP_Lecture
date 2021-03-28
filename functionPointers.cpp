@@ -6,6 +6,10 @@ int add(int a, int b) {
 	return a + b;
 }
 
+int sub(int a, int b) {
+	return a - b;
+}
+
 void f1() {
 	cout << "\n\tf1 called\n";
 }
@@ -19,7 +23,27 @@ void functionPointersExample1() {
 
 	//cout << "\n\t Example 1 ------------------------------\n";
 
-	//int (*FuncPtr) (int, int);
+	/*{
+		int (*functionPointer) (int, int);
+		functionPointer = add;
+
+		cout << "\n\t" << functionPointer(0, 0) << endl;
+	}*/
+
+	/*{
+		int (*functionPointer) (int, int) = add;
+
+		cout << "\n\t" 
+			<< (*functionPointer)(0, 0) // calling with * in () doesn't make a difference, it's just easier to read.
+			<< endl;
+	}*/
+
+
+	/*{
+		typedef int (*FunctionPointer)(int, int);	// another way to declare is with typedef
+		FunctionPointer fp1 = add;
+		FunctionPointer fp2 = sub;
+	}*/
 
 }
 
@@ -79,7 +103,7 @@ void functionPointersExcercise2() {
 	double (*functionPointer)(double, double) = &sum;
 
 	cout << "\n\t sum(1.5, -0.5):\t" << functionPointer(1.5, -0.5);
-		
+
 	functionPointer = &product;
 
 	cout << "\n\t product(1.5, -0.5):\t" << functionPointer(1.5, -0.5)
@@ -91,7 +115,7 @@ void functionPointersExcercise3() {
 	cout << "\n\t Excercise 3 ----------------------------\n";
 
 	double
-		(*sumPnt)(double, double) = &sum,
+	(*sumPnt)(double, double) = &sum,
 		(*productPnt)(double, double) = &product;
 
 	cout << "\n\t" << sumPnt(productPnt(1.5, -0.5), productPnt(0.1111, -9.09)) << endl;
@@ -111,7 +135,7 @@ void functionPointersExcercise4() {
 
 void functionPointers() {
 
-	functionPointersExample1();
+	//functionPointersExample1();
 
 	functionPointersExample2();
 

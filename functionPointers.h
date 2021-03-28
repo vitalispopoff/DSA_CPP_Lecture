@@ -7,7 +7,6 @@ pass the function as an argument of another function
 
 
 
-
 */
 void functionPointers();
 

@@ -148,6 +148,7 @@
     <ClCompile Include="constructDestruct.cpp" />
     <ClCompile Include="forLoops.cpp" />
     <ClCompile Include="functionPointers.cpp" />
+    <ClCompile Include="functionPointers01.cpp" />
     <ClCompile Include="lambdaFunctions.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenu.cpp" />
@@ -177,6 +178,7 @@
     <ClInclude Include="forLoops.h" />
     <ClInclude Include="aLilGame.h" />
     <ClInclude Include="functionPointers.h" />
+    <ClInclude Include="functionPointers01.h" />
     <ClInclude Include="lambdaFunctions.h" />
     <ClInclude Include="rangeBasedForLoops.h" />
     <ClInclude Include="inheritance.h" />

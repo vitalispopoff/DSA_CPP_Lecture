@@ -6,128 +6,174 @@ void mainMenu(int menu) {
 
 		// 0 :	basic dictionary
 
-			  // reserved names
+			// reserved names
+
 	case 0x000: {
 #include "reservedNames.h"
 		break;
 	}
-			  // operators
+			  
+			// operators
+
 	case 0x010: {
 #include "operators.h"
 		break;
 	}
-			  // indirection
+			  
+			// indirection
+
 	case 0x0F0: {
 #include "indirection.h"
 		indirection();
 		break;
 	}
 
-			  // 1 :	data types
-			  // fixed width integers
+			// 1 :	data types
+			  
+			// fixed width integers
+
 	case 0x110: {
 #include "types_fixedWidthIntegers.h"
 		fixedInt();
 		break;
 	}
-			  // signed integers
+			  
+			// signed integers
+
 	case 0x111: {
 #include "types_integerSigned.h"
 		types_signedIntegrals();
 		break;
 	}
-			  // structs
+			  
+			// structs
+
 	case 0x1E0: {
 #include "structs.h"
 		structs();
+		break;
 	}
-			  // unions
+			  
+			// unions
+
 	case 0x1E1: {
 #include "unions.h"
 		unions();
-
+		break;
 	}
-
+			  			  
+			// function pointers
 
 	case 0x1F0: {
 #include "functionPointers.h"
 		functionPointers();
 		break;
-
 	}
 
-			  // 2 :	data basic structures
+	case 0x1F1: {
+#include "functionPointers01.h"
+		functionPointers01();
+		break;
+	}
 
-			  // strings
+			// 2 :	data basic structures
+
+			// strings
+
 	case 0x200: {
 #include "strings.h"
 		strings();
 		break;
 	}
-			  // arrays
+			  
+			// arrays
+
 	case 0x210: {
 #include "arrays.h"
 		arrays();
 		break;
 	}
-			  // 2d arrays
+			  
+			// 2d arrays
+
 	case 0x211: {
 #include "arrays2D.h"
 		arrays2D();
 		break;
 	}
-			  // vectors
+			  
+			// vectors
+
 	case 0x220: {
 		break;
 	}
 
-			  // 3 :	syntax basic elements
+			// 3 :	syntax basic elements
 
-			  // while loops
+			// while loops
+
 	case 0x300: {
 #include "WhileLoops.h"
 		whileLoops();
 		break;
 	}
-			  // for loops
+			  
+			// for loops		
+
 	case 0x310: {
 #include "forLoops.h"
 		forLoops();
 		break;
 	}
-			  // ranged for loops
+			  
+			// ranged for loops
+
 	case 0x311: {
 #include "rangeBasedForLoops.h"
 		rangeBasedForLoops();
 		break;
 	}
-			  // switches
+
+			// switches
+
 	case 0x320: {
 #include "switches.h"
 		switches();
 		break;
 	}
-			  // lambda functions
+			  
+			// lambda functions
+
 	case 0x330: {
 #include "lambdaFunctions.h"
 		lambdaFunctions();
 		break;
 	}
 
+	case 0x340: {
+#include "functionTemplates.h"
+		functionTemplates();
+		break;
+	}
+
+			// new, delete
+
 	case 0x380: {
 
 #include "newsAndDeletees.h"
-
 		newsAndDeletees();
+		break;
 	}
+
+			// overloading
 
 	case 0x390: {
 #include "overloading.h"
-
 		overloading();
+		break;
 	}
 
-			  // 4 :	objectivity
+			// 4 :	objectivity
 
 	case 0x400: {
 #include "classes.h"
@@ -141,7 +187,9 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			  // 5 :	preprocessor directives
+			// 5 :	preprocessor directives
+
+			// #define
 
 	case 0x500: {
 #include "define.h"
@@ -149,21 +197,29 @@ void mainMenu(int menu) {
 		break;
 	}
 
-			  // F :	snippets
+			// F :	snippets
 
 	case 0xF00: {
 #include "calculator.h"
 		break;
 	}
 
+			// game
+
 	case 0xF10: {
 #include "aLilGame.h"
 		break;
 	}
 
-			  //	default
+			//	default
 
 	default: break;
 
 	}
 }
+
+
+
+
+
+

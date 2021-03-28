@@ -138,6 +138,9 @@
     <ClCompile Include="lambdaFunctions.cpp">
       <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
+    <ClCompile Include="functionPointers01.cpp">
+      <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -220,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="lambdaFunctions.h">
       <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
+    </ClInclude>
+    <ClInclude Include="functionPointers01.h">
+      <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

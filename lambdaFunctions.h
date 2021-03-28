@@ -58,5 +58,6 @@ void lambdaFunctionsExample10();
 
 /*lambda in std::function
 
+std::function uses function pointer, right?
 */
 void lambdaFunctionsExample11();
