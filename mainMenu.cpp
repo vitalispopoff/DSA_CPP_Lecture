@@ -1,221 +1,89 @@
 #include "main.h"
+#include <vector>
 
-void mainMenu(int menu) {
+void mainMenu() {
 
-	switch (menu) {
+	typedef void (*fP)();
 
-		// 0 :	basic dictionary
-
-			// reserved names
-
-	case 0x000: {
-#include "reservedNames.h"
-		break;
-	}
-			  
-			// operators
-
-	case 0x010: {
-#include "operators.h"
-		break;
-	}
-			  
-			// indirection
-
-	case 0x0F0: {
+	vector<fP> menuVector = {
+		[]() {mainMenu(); },
+		[] {//indirection
 #include "indirection.h"
-		indirection();
-		break;
-	}
-
-			// 1 :	data types
-			  
-			// fixed width integers
-
-	case 0x110: {
+			indirection(); },
+		[] {//fixed width integrals
 #include "types_fixedWidthIntegers.h"
-		fixedInt();
-		break;
-	}
-			  
-			// signed integers
-
-	case 0x111: {
+			fixedInt(); },
+		[] {//signed integrals
 #include "types_integerSigned.h"
-		types_signedIntegrals();
-		break;
-	}
-			  
-			// structs
-
-	case 0x1E0: {
+			types_signedIntegrals(); },
+		[] {//structs
 #include "structs.h"
-		structs();
-		break;
-	}
-			  
-			// unions
-
-	case 0x1E1: {
+			structs(); },
+		[] {//unions
 #include "unions.h"
-		unions();
-		break;
-	}
-			  			  
-			// function pointers
-
-	case 0x1F0: {
+			unions(); },
+		[] {//function pointers
 #include "functionPointers.h"
-		functionPointers();
-		break;
-	}
-
-	case 0x1F1: {
+			functionPointers(); },
+		[] {// function pointers 01
 #include "functionPointers01.h"
-		functionPointers01();
-		break;
-	}
-
-			// 2 :	data basic structures
-
-			// strings
-
-	case 0x200: {
+			functionPointers01(); },
+		[] {// strings
 #include "strings.h"
-		strings();
-		break;
-	}
-			  
-			// arrays
-
-	case 0x210: {
+			strings(); },
+		[] {//arrays
 #include "arrays.h"
-		arrays();
-		break;
-	}
-			  
-			// 2d arrays
-
-	case 0x211: {
+			arrays(); },
+		[] {//arrays2D
 #include "arrays2D.h"
-		arrays2D();
-		break;
-	}
-			  
-			// vectors
-
-	case 0x220: {
-		break;
-	}
-
-			// 3 :	syntax basic elements
-
-			// while loops
-
-	case 0x300: {
+			arrays2D(); },
+		[] {//while loops
 #include "WhileLoops.h"
-		whileLoops();
-		break;
-	}
-			  
-			// for loops		
-
-	case 0x310: {
+			whileLoops(); },
+		[] {//for loops
 #include "forLoops.h"
-		forLoops();
-		break;
-	}
-			  
-			// ranged for loops
-
-	case 0x311: {
+			forLoops(); },
+		[] {//range based loops
 #include "rangeBasedForLoops.h"
-		rangeBasedForLoops();
-		break;
-	}
-
-			// switches
-
-	case 0x320: {
+			rangeBasedForLoops(); },
+		[] {//switches
 #include "switches.h"
-		switches();
-		break;
-	}
-			  
-			// lambda functions
-
-	case 0x330: {
+			switches(); },
+		[] {//lambda functions
 #include "lambdaFunctions.h"
-		lambdaFunctions();
-		break;
-	}
-
-	case 0x340: {
+			lambdaFunctions(); },
+		[] {//function templates
 #include "functionTemplates.h"
-		functionTemplates();
-		break;
-	}
-
-			// new, delete
-
-	case 0x380: {
-
+			functionTemplates(); },
+		[] {// new and delete
 #include "newsAndDeletees.h"
-		newsAndDeletees();
-		break;
-	}
-
-			// overloading
-
-	case 0x390: {
+			newsAndDeletees(); },
+		[] {// overloading
 #include "overloading.h"
-		overloading();
-		break;
-	}
-
-			// 4 :	objectivity
-
-	case 0x400: {
+			overloading(); },
+		[] {// classes
 #include "classes.h"
-		classes();
-		break;
-	}
-
-	case 0x410: {
+			classes(); },
+		[] {//inheritance
 #include "inheritance.h"
-		inheritance();
-		break;
-	}
-
-			// 5 :	preprocessor directives
-
-			// #define
-
-	case 0x500: {
+			inheritance(); },
+		[] {//define
 #include "define.h"
-		define();
-		break;
+			define(); },
+		[] {//a lil game
+#include "aLilGame.h"			
+			aLilGame(); }
+	};
+
+	int menu = -1;
+
+	if (menu < 0) {
+		cout << "\n\t choose a number between 1 and " << menuVector.size() << " : ";
+		cin >> menu;
+
+		if (menu <= menuVector.size() && menu >= 0) menuVector[menu]();
 	}
-
-			// F :	snippets
-
-	case 0xF00: {
-#include "calculator.h"
-		break;
-	}
-
-			// game
-
-	case 0xF10: {
-#include "aLilGame.h"
-		break;
-	}
-
-			//	default
-
-	default: break;
-
-	}
+	cout << "\n\n\tthat would be all then.\n";
 }
 
 

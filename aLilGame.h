@@ -6,4 +6,4 @@ void printMap();
 
 //bool move(char);
 
-void lilGame();
+void aLilGame();

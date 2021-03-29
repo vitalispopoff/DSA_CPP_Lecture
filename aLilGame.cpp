@@ -130,7 +130,7 @@ bool move() {
 
 	char action;
 
-void lilGame() {
+void aLilGame() {
 
 	playerPos.x = playerPos.y = 0;
 
