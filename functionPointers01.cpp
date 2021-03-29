@@ -56,14 +56,8 @@ void fp01Example03() {
 
 }
 
-
-bool ascending(float a, float b) {
-	return a < b;
-}
-
-bool descending(float a, float b) {
-	return b < a;
-}
+bool ascending(float a, float b) {return a < b; }
+bool descending(float a, float b) {return b < a; }
 
 void fp01Example04() {
 
@@ -107,36 +101,46 @@ void fp01Example05() {
 	cout << endl;
 }
 
-float nop(float dest, float src) { return dest; }
-float add2(float dest, float src) { return dest + src; }
-float sub2(float dest, float src) { return dest - src; }
-float mul2(float dest, float src) { return dest * src; }
-float div2(float dest, float src) { return dest / src; }
-
-
 void fp01Example06() {
 
-	//auto idle = [](float dst, float src) { return dst; };
-	//auto add2 = [](float dst, float src) {return dst + src; };
-	//auto sub2 = [](float dst, float src) {return dst - src; };
+	typedef float(*functionPointer)(float&, float);
+	functionPointer operationTable[] = {
+		[](float& a, float) {return a; },
+		[](float& a, float b) {return a + b; } ,
+		[](float& a, float b) {return a - b; } ,
+		[](float& a, float b) {return a * b; } ,
+		[](float& a, float b) {return a / b; }
+	};
 
+	float input[3] = { 0.0 };
+	string output[3] = {
+		"\n\tchoose value#1\t",
+		"\n\tchoose value#2\t",
+		"\n\tchoose an operation:\tadd : 1 | sub : 2 | mul : 3 | div : 4\t"
+	};
 
-		typedef float (*functionPointer)(float, float);
-	functionPointer operationTable[] = { nop, add2, sub2, mul2, div2 };
-	double val1 = 0.0f, val2 = 0.0f;
+	for (int i = 0; i < 3; ++i) {
+		cout << output[i];
+		cin >> input[i];
+	};
 
-	cout << "\n\tchoose value#1\t";
-	cin >> val1;
-	cout << "\n\tchoose a value#2\t";
-	cin >> val2;
-	cout << "\n\tchoose an operation:\tadd : 1 | sub : 2 | mul : 3 | div : 4\n";
-
-	int op;
-
-	cin >> op;
-	cout << "\n\tresult\t" << operationTable[op % 5](val1, val2) << endl;
+	cout << "\n\tresult\t" << operationTable[(int)input[2] % 5](input[0], input[1]) << endl;
 }
 
+int aFunction(int a) { return a <<= a; }
+
+void fp01Example07() {
+
+	int (*aFunctionPointer) (int) = aFunction;
+	unsigned char* cPtr = (unsigned char*)aFunctionPointer;
+	int a = aFunction(1);
+
+	cout << "\n\t";
+
+	for (int i = 0; i < 10; ++i) cout << (hex) << (int)*cPtr++ << ' ';
+
+	cout << endl;
+}
 
 void functionPointers01() {
 
@@ -151,5 +155,6 @@ void functionPointers01() {
 	//fp01Example05();
 
 	fp01Example06();
-}
 
+	//fp01Example07();
+}

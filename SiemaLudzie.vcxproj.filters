@@ -126,9 +126,6 @@
     <ClCompile Include="unions.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
-    <ClCompile Include="functionTemplates.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="functionPointers.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
     </ClCompile>
@@ -140,6 +137,9 @@
     </ClCompile>
     <ClCompile Include="functionPointers01.cpp">
       <Filter>Pliki źródłowe\_1 data types</Filter>
+    </ClCompile>
+    <ClCompile Include="functionTemplates.cpp">
+      <Filter>Pliki źródłowe\_3 basic syntax</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -212,9 +212,6 @@
     <ClInclude Include="unions.h">
       <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
-    <ClInclude Include="functionTemplates.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="functionPointers.h">
       <Filter>Pliki nagłówkowe\_1 data types</Filter>
     </ClInclude>
@@ -226,6 +223,9 @@
     </ClInclude>
     <ClInclude Include="functionPointers01.h">
       <Filter>Pliki nagłówkowe\_1 data types</Filter>
+    </ClInclude>
+    <ClInclude Include="functionTemplates.h">
+      <Filter>Pliki nagłówkowe\_3 basic syntax</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

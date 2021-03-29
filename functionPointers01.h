@@ -24,7 +24,14 @@ instead of function pointer
 */
 void fp01Example05();
 
+/*jump table 
+lambda function may substitute 
+a declared function pointer.
 
-/*jump table */
+*/
 void fp01Example06();
 
+/*retrieving machine code 
+ of aFunction from the memory
+*/
+void fp01Example07();
